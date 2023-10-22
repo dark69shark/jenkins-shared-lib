@@ -5,6 +5,7 @@ def call(Map args, Closure body) {
         var3, "stfing"
     ]
     settings()
+    args = defaults + args
     pipeline {
         agent any
         stages {
