@@ -1,4 +1,4 @@
 def call() {
-    //globalVars = libraryResources 'env.yaml'
+    globalVars = readYaml(text: libraryResource('env.yaml'))
 
 }

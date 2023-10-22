@@ -16,7 +16,10 @@ def call(Map args, Closure body) {
             }
             stage("Build"){
                 steps {
-                    body()
+                    script {
+                        body()
+                    }
+                    
                 }
             }
         }
