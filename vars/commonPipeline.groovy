@@ -2,7 +2,7 @@ def call(Map args, Closure body) {
     defaults = [
         var1: 1,
         var2: 2,
-        var3, "stfing"
+        var3: "stfing"
     ]
     settings()
     args = defaults + args
