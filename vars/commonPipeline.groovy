@@ -4,7 +4,6 @@ def call(Map args, Closure body) {
         var2: 2,
         var3: "stfing"
     ]
-    settings()
     args = defaults + args
     pipeline {
         agent any
@@ -17,9 +16,8 @@ def call(Map args, Closure body) {
             stage("Build"){
                 steps {
                     script {
-                        body()
+                        body(args)
                     }
-                    
                 }
             }
         }
